@@ -1,9 +1,12 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 import Predict from './components/Predict'
-import { styles, compareConfidence } from './components/utils'
+import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button'
+import { compareConfidence } from './components/utils'
 import ImagePreview from './components/ImagePreview'
 import { fetchPredict } from './components/api'
+import './App.css'
+
 
 class App extends React.Component {
   constructor() {
@@ -17,11 +20,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2 style={styles}>
-          Upload a plant photo file
-        </h2>
-        <button type="submit" onClick={this._handleUploadImage}>Upload</button>
+      <Container fluid className="body"> 
+        <h2>Upload a plant photo file</h2>
+        <Button variant="primary" onClick={this._handleUploadImage}>Upload</Button>
         <div>
           <form>
             <input type="file" onChange={this._handleImageChange} />
@@ -38,7 +39,7 @@ class App extends React.Component {
               ))}
           </div>
         </div>
-      </div>
+      </Container>
     )
   }
 

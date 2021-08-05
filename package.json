@@ -1,0 +1,27 @@
+{
+  "name": "plant-disease-detector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "react-bootstrap": "^2.0.0-beta.4",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NirinaTanjona/Plant-disease-detector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NirinaTanjona/Plant-disease-detector/issues"
+  },
+  "homepage": "https://github.com/NirinaTanjona/Plant-disease-detector#readme"
+}
