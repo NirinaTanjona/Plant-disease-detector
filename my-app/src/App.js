@@ -1,6 +1,6 @@
 import React from 'react'
 import Predict from './components/Predict'
-import Container from 'react-bootstrap/Container'
+import { Container, Row, Col } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button'
 import { compareConfidence } from './components/utils'
 import ImagePreview from './components/ImagePreview'
@@ -21,24 +21,28 @@ class App extends React.Component {
   render() {
     return (
       <Container fluid className="body"> 
-        <h2>Upload a plant photo file</h2>
-        <Button variant="primary" onClick={this._handleUploadImage}>Upload</Button>
-        <div>
-          <form>
-            <input type="file" onChange={this._handleImageChange} />
-          </form>
-          <div>
-            <ImagePreview imagePreview={this.state.imagePreviewUrl} />
-          </div>
-          <div>
-            {this.state.prediction
-              .filter(predict => (predict.confidence > 0.10))
-              .sort(compareConfidence)
-              .map(predict => (
-                <Predict key={predict.index} {...predict} />
-              ))}
-          </div>
-        </div>
+        <h1 className="title">Plant disease detection</h1>
+        <Row>
+          <Col md style={{ border: '1px solid black' }}>
+            <Button variant="primary" onClick={this._handleUploadImage}>Upload</Button>
+            <form>
+              <input type="file" onChange={this._handleImageChange} />
+            </form>
+            <div>
+              <ImagePreview imagePreview={this.state.imagePreviewUrl} />
+            </div>
+          </Col>
+          <Col md style={{ border: '1px solid black' }}>
+            <div>
+              {this.state.prediction
+                .filter(predict => (predict.confidence > 0.10))
+                .sort(compareConfidence)
+                .map(predict => (
+                  <Predict key={predict.index} {...predict} />
+                ))}
+            </div>
+          </Col>
+        </Row>
       </Container>
     )
   }
