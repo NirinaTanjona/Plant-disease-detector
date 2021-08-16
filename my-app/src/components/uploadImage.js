@@ -2,6 +2,7 @@ import React from 'react'
 import { fetchPredict } from './api'
 import Button from 'react-bootstrap/Button'
 import ImagePreview from './ImagePreview'
+import Col from 'react-bootstrap/Col'
 
 
 export default class UploadImage extends React.Component {
@@ -47,15 +48,15 @@ export default class UploadImage extends React.Component {
 
   render() {
     return (
-      <div>
-        <Button variant="primary" onClick={this._handleUploadImage}>Upload</Button>
+      <Col md className="d-flex align-items-center">
         <form>
           <input type="file" onChange={this._handleImageChange} />
         </form>
         <div>
           <ImagePreview imagePreview={this.state.imagePreviewUrl} />
         </div>
-      </div>
+        <Button variant="primary" onClick={this._handleUploadImage}>Upload</Button>
+      </Col>
     )
   }
 }
