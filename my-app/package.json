@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.3",
     "bootstrap": "^5.0.2",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.1",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "^17.0.1",
@@ -16,6 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,4 +47,8 @@
   "devDependencies": {
     "@types/react-dom": "^17.0.1"
   }
+  {
+    "name": "Plant-disease-detector",
+    "homepage": "https://NirinaTanjona.github.io/Plant-disease-detector/",
+    "version": "0.1.0"
 }
