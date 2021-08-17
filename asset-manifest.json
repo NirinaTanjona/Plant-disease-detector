@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Plant-disease-detector/static/css/main.4aa52231.chunk.css",
+    "main.js": "/Plant-disease-detector/static/js/main.1aa885af.chunk.js",
+    "main.js.map": "/Plant-disease-detector/static/js/main.1aa885af.chunk.js.map",
+    "runtime-main.js": "/Plant-disease-detector/static/js/runtime-main.1a718a4a.js",
+    "runtime-main.js.map": "/Plant-disease-detector/static/js/runtime-main.1a718a4a.js.map",
+    "static/css/2.4be38407.chunk.css": "/Plant-disease-detector/static/css/2.4be38407.chunk.css",
+    "static/js/2.66a3e717.chunk.js": "/Plant-disease-detector/static/js/2.66a3e717.chunk.js",
+    "static/js/2.66a3e717.chunk.js.map": "/Plant-disease-detector/static/js/2.66a3e717.chunk.js.map",
+    "static/js/3.0f90de81.chunk.js": "/Plant-disease-detector/static/js/3.0f90de81.chunk.js",
+    "static/js/3.0f90de81.chunk.js.map": "/Plant-disease-detector/static/js/3.0f90de81.chunk.js.map",
+    "index.html": "/Plant-disease-detector/index.html",
+    "static/css/2.4be38407.chunk.css.map": "/Plant-disease-detector/static/css/2.4be38407.chunk.css.map",
+    "static/css/main.4aa52231.chunk.css.map": "/Plant-disease-detector/static/css/main.4aa52231.chunk.css.map",
+    "static/js/2.66a3e717.chunk.js.LICENSE.txt": "/Plant-disease-detector/static/js/2.66a3e717.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Plant-disease-detector/static/media/nunito-sans-v6-latin-ext_latin-regular.d72a236f.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a718a4a.js",
+    "static/css/2.4be38407.chunk.css",
+    "static/js/2.66a3e717.chunk.js",
+    "static/css/main.4aa52231.chunk.css",
+    "static/js/main.1aa885af.chunk.js"
+  ]
+}
