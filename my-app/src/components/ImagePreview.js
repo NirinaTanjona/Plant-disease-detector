@@ -7,11 +7,12 @@ class ImagePreview extends React.Component {
     render() {
         let imagePreviewUrl = this.props.imagePreview
         return (
-            imagePreviewUrl ?
-                (<img src={imagePreviewUrl} alt="" height="100%" />) :
-                (<div>
-                    Please select an image
-                </div>)
+          <div className="mt-3 mb-3 imagePreview-container">
+            { imagePreviewUrl && (
+              <img className="image-uploaded" src={imagePreviewUrl} alt="" />
+              )
+            }
+          </div>
         )
     }
 }

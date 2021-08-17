@@ -1,16 +1,26 @@
-import React from 'react';
+import React from 'react'
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 class Predict extends React.Component {
+  constructor(props) {
+    super(props)
+    this.now = this.props.confidence * 100
+  }
 
-    render() {
-        return (
-            <div>
-                <ul>
-                    <h3>{this.props.disease} : {this.props.confidence}</h3>
-                </ul>
-            </div>
-        )
-    }
+  removeUnderscore = () => {
+    const x = this.props.disease.replace(/___/g, "~ ")
+    return x.replace(/_/g, " ")
+  }
+
+
+  render() {
+    return (
+      <div>
+        <h3 className="disease-name">{this.removeUnderscore()}</h3>
+        <ProgressBar now={this.now} label={`${this.now}%`} /> 
+      </div>
+    )
+  }
 }
 
 export default Predict
