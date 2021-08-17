@@ -46,9 +46,9 @@
   },
   "devDependencies": {
     "@types/react-dom": "^17.0.1"
-  }
-  {
-    "name": "Plant-disease-detector",
-    "homepage": "https://NirinaTanjona.github.io/Plant-disease-detector/",
-    "version": "0.1.0"
+  },
+
+  "name": "starter-project",
+  "homepage": "https://tomerpacific.github.io/starter-project/",
+  "version": "0.1.0"
 }
