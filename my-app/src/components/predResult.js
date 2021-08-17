@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col'
 export default class PredictionResult extends React.Component {
   render() {
     return (
-      <Col md className="m-3 prediction-result border-left">
+      <Col md className="mb-5 prediction-result border-left">
         <h1 className="prediction-result-title">Prediction  
           <span className="prediction-result-blue-title"> Result</span>
         </h1>
