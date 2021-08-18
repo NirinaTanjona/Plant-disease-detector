@@ -1,5 +1,5 @@
 export const fetchPredict = async (data) => {
-    const response = await fetch('https://plant-disease-detector01.herokuapp.com/predict', {
+    const response = await fetch('http://127.0.0.1:5000/predict', {
         mode: 'cors',
         method: 'POST',
         body: data

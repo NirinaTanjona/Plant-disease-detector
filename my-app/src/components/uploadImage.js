@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import { CloudUploadOutline } from 'react-ionicons'
+import Spinner from 'react-bootstrap/Spinner'
 
 
 export default class UploadImage extends React.Component {
@@ -14,6 +15,7 @@ export default class UploadImage extends React.Component {
     this.state = {
       selectedFile: '',
       imagePreview: '',
+      isLoading: false,
     }
   }
 
@@ -41,11 +43,14 @@ export default class UploadImage extends React.Component {
     data.append('filename', this.state.selectedFile.name)
 
     this.getPredict(data)
+    this.setState({ selectedFile: '' })
   }
 
   getPredict = async (data) => {
+    this.setState({ isLoading: true })
     const result = await fetchPredict(data)
     this.props.onSubmit([...result])
+    this.setState({ isLoading: false })
   }
 
 
@@ -70,7 +75,7 @@ export default class UploadImage extends React.Component {
                 <Button 
                   variant="primary" 
                   onClick={this._handleUploadImage}>
-                  detect disease
+                  {!this.state.isLoading ? <span>detect disease</span>: <span><Spinner className="mr-3" animation="grow" size="sm" />  searching...</span>} 
                 </Button>
               </Card.Body>
           </Card>
