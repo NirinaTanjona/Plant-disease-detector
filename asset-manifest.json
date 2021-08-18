@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Plant-disease-detector/static/css/main.4aa52231.chunk.css",
-    "main.js": "/Plant-disease-detector/static/js/main.22975e37.chunk.js",
-    "main.js.map": "/Plant-disease-detector/static/js/main.22975e37.chunk.js.map",
+    "main.js": "/Plant-disease-detector/static/js/main.bd97affe.chunk.js",
+    "main.js.map": "/Plant-disease-detector/static/js/main.bd97affe.chunk.js.map",
     "runtime-main.js": "/Plant-disease-detector/static/js/runtime-main.f92c7c1a.js",
     "runtime-main.js.map": "/Plant-disease-detector/static/js/runtime-main.f92c7c1a.js.map",
     "static/css/2.4be38407.chunk.css": "/Plant-disease-detector/static/css/2.4be38407.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.4be38407.chunk.css",
     "static/js/2.b49a96d5.chunk.js",
     "static/css/main.4aa52231.chunk.css",
-    "static/js/main.22975e37.chunk.js"
+    "static/js/main.bd97affe.chunk.js"
   ]
 }
