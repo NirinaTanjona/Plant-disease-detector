@@ -22,7 +22,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="body d-flex flex-column"> 
-        <Header title="Plant disease detection" />
+        <Header title="Plant disease test" />
         <Container className="main-container" fluid d-flex>
           <Row className="main-row"> 
             <UploadImage onSubmit={this.updatePredict}/>
